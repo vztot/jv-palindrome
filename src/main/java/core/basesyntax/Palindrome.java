@@ -22,7 +22,7 @@ public class Palindrome {
      */
     public boolean isPalindrome(String text) {
         text = text.toLowerCase().replaceAll("\\W", "");
-        String txet = new StringBuffer(text).reverse().toString();
-        return text.equals(txet);
+        String reversedText = new StringBuffer(text).reverse().toString();
+        return text.equals(reversedText);
     }
 }
